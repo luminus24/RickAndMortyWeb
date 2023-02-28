@@ -8,8 +8,8 @@ const Cards = () => {
    return (
       <div>
          {
-            characters?.map((character) =>(
-               <div>
+            characters?.results.map((character) =>(
+               <div key={character?.id}>
                   <h1>{character?.name}</h1> {/*nombre*/}
                   <img src={character?.image} alt="character image" />
                   <h4>{character?.status}</h4> {/*estado*/}
