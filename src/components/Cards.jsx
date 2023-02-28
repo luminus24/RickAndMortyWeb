@@ -1,9 +1,9 @@
 import React from 'react'
 import useGetCharacters from '../Hooks/useGetCharacters'
 
-const Cards = () => {
+const Cards = ({characterName}) => {
 
-   const characters = useGetCharacters()
+   const characters = useGetCharacters(characterName)
    console.log(characters)
    return (
       <div>

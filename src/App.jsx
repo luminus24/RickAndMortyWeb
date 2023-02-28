@@ -5,11 +5,13 @@ import Input from './components/Input'
 
 function App() {
 
+  const [characterName, setCharacterName] = useState()
+
   return (
     <div className="App">
       <h1>Rick And Morty Web</h1>
-      <Input/>
-      <Cards/>
+      <Input setCharacterName= {setCharacterName}/>
+      <Cards characterName = {characterName}/>
     </div>
   )
 }
