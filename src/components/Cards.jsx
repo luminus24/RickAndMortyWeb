@@ -1,15 +1,16 @@
 import React from 'react'
 import useGetCharacters from '../Hooks/useGetCharacters'
+import "../styles/cardStyles.css"
 
 const Cards = ({characterName}) => {
 
    const characters = useGetCharacters(characterName)
    console.log(characters)
    return (
-      <div>
+      <div className='card'>
          {
             characters?.results.map((character) =>(
-               <div key={character?.id}>
+               <div key={character?.id} className="card-container">
                   <h1>{character?.name}</h1> {/*nombre*/}
                   <img src={character?.image} alt="character image" />
                   <h4>{character?.status}</h4> {/*estado*/}
