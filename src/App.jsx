@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Cards from './components/Cards'
 import Input from './components/Input'
+import portada from "./assets/rick-and-Morty-portada.jpg"
 
 function App() {
 
@@ -9,7 +10,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Rick And Morty Web</h1>
+      <img src={portada} alt="tmr" className='portada'/>
       <Input setCharacterName= {setCharacterName}/>
       <Cards characterName = {characterName}/>
     </div>

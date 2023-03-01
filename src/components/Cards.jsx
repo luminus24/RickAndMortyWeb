@@ -5,7 +5,7 @@ import "../styles/cardStyles.css"
 const Cards = ({characterName}) => {
 
    const characters = useGetCharacters(characterName)
-   console.log(characters)
+
    return (
       <div className='card'>
          {
@@ -35,5 +35,4 @@ const Cards = ({characterName}) => {
       </div>
    )
 }
-//{`${}`}
 export default Cards

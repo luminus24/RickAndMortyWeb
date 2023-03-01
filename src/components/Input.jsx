@@ -1,4 +1,5 @@
 import React from 'react'
+import "../styles/inputStyles.css"
 
 const Input = ({setCharacterName}) => {
 
@@ -11,7 +12,7 @@ const Input = ({setCharacterName}) => {
    return (
          <form onSubmit={handleSubmit} className="search-form">
             <input id="searchCharacter" className='input-search' type="text" placeholder='Nombre del personaje'/>
-            <button className='btn-search'>Buscar</button>
+            <button className='button'>Buscar</button>
          </form>
    )
 }
