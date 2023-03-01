@@ -11,18 +11,29 @@ const Cards = ({characterName}) => {
          {
             characters?.results.map((character) =>(
                <div key={character?.id} className="card-container">
-                  <h1>{character?.name}</h1> {/*nombre*/}
-                  <img src={character?.image} alt="character image" />
-                  <h4>{character?.status}</h4> {/*estado*/}
-                  <h3>{character?.gender}</h3> {/*genero*/}
-                  <h3>{character?.location.name}</h3> {/*localizacion*/}
-                  <h3>{character?.episode.length}</h3> {/*episodios en los que aparece*/}
-
+                  <img src={character?.image} alt="character image" className='img-character'/>
+                  <h1 className='title'>{character?.name}</h1>
+                  <div className='status-container'>
+                     <div className={`${character?.status} status`}></div>
+                     <h4 >{character?.status}</h4>
+                  </div>
+                  <div className='genero'>
+                     <h4>Gènero: </h4>
+                     <span> {character?.gender}</span>
+                  </div>
+                  <div className='localizacion'>
+                     <h4>Localización: </h4>
+                     <span>{character?.location.name}</span>
+                  </div>
+                  <div className='episodios'>
+                     <h4>Episodios: </h4>
+                     <span>{character?.episode.length}</span>
+                  </div>
                </div>
             ))
          }
       </div>
    )
 }
-
+//{`${}`}
 export default Cards

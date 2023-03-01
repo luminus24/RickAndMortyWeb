@@ -1,1 +1,11 @@
+*{
+   flex-wrap: wrap;
+   margin: 0;
+   padding: 0;
+}
 
+body{
+   background-image: url("assets/background.svg");
+   height: 100%;
+   width: 100%;
+}

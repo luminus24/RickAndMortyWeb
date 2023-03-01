@@ -1,4 +1,89 @@
 .card{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 10px;
+}
+
+.card-container{
    position: relative;
+   width: 65vw;
+   height: 50vh;
+   background-color: burlywood;
+   border-radius: 25px;
+   margin: 5px;
+   padding: 5px;
+}
+
+.title{
    font-family: 'Aclonica', sans-serif;
+   font-size: 1.2rem;
+   text-align: center;
+   margin-bottom: 10px;
+}
+
+.img-character{
+   margin-top: 10px;
+   width: 100%;
+   border-radius: 10px;
+}
+
+.status-container{
+   display: flex;
+   position:absolute;
+   margin: 5px;
+   top:20px;
+   background-color: rgb(68, 68, 68);
+   padding: 4px;
+   border-radius: 10px;
+}
+
+.status-container h4{
+   font-size: 0.8rem;
+   margin-left: 4px;
+   color: white;
+   text-transform: capitalize;
+}
+/*  */
+.status{
+   width: 0.8rem;
+   height: 0.8rem;
+   border-radius: 50px;
+   -webkit-clip-path: polygon(95% 17%, 69% 9%, 54% 30%, 36% 9%, 15% 20%, 8% 43%, 25% 81%, 55% 100%, 88% 78%, 100% 37%);
+clip-path: polygon(95% 17%, 69% 9%, 54% 30%, 36% 9%, 15% 20%, 8% 43%, 25% 81%, 55% 100%, 88% 78%, 100% 37%);
+}
+
+.Alive {
+   background-color: green;
+}
+
+.Dead {
+   background-color: red;
+}
+
+.unknown {
+   background-color: rgb(117, 117, 117);
+}
+
+.genero{
+   display: flex;
+   margin: 5px 0px 5px 15px;
+}
+
+.genero span{
+   margin-left: 5px;
+}
+
+.localizacion{
+   display: flex;
+   margin: 5px 0px 5px 15px;
+}
+
+.episodios{
+   display: flex;
+   margin: 5px 0px 5px 15px;
+}
+
+.episodios span{
+   margin-left: 5px;
 }
