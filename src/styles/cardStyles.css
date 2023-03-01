@@ -9,10 +9,11 @@
    position: relative;
    width: 65vw;
    height: 50vh;
-   background-color: burlywood;
+   background-color: rgb(75, 92, 73);
    border-radius: 25px;
-   margin: 5px;
-   padding: 5px;
+   margin: 10px;
+   padding: 10px;
+   box-shadow: rgb(46, 65, 49) 0px 20px 30px -10px;
 }
 
 .title{
