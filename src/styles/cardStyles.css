@@ -6,13 +6,18 @@
 }
 
 .card-container{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
    position: relative;
-   width: 65vw;
-   height: 50vh;
+   width: 50%;
+   height: 55%;
    background-color: rgb(75, 92, 73);
    border-radius: 25px;
    margin: 10px;
-   padding: 10px;
+   padding: 11px;
+   padding-bottom: 5px;
    box-shadow: rgb(46, 65, 49) 0px 20px 30px -10px;
 }
 
@@ -25,8 +30,7 @@
 }
 
 .img-character{
-   margin-top: 10px;
-   width: 100%;
+   width: 75%;
    border-radius: 10px;
 }
 
@@ -34,7 +38,8 @@
    display: flex;
    position:absolute;
    margin: 5px;
-   top:20px;
+   top:10px;
+   left: 20px;
    background-color: rgb(68, 68, 68);
    padding: 4px;
    border-radius: 10px;
@@ -46,7 +51,7 @@
    color: white;
    text-transform: capitalize;
 }
-/*  */
+
 .status{
    width: 0.8rem;
    height: 0.8rem;
@@ -81,6 +86,10 @@ clip-path: polygon(95% 17%, 69% 9%, 54% 30%, 36% 9%, 15% 20%, 8% 43%, 25% 81%, 5
    margin: 5px 0px 5px 15px;
 }
 
+.localizacion span{
+   margin-left: 5px;
+}
+
 .episodios{
    display: flex;
    margin: 5px 0px 5px 15px;
@@ -88,4 +97,18 @@ clip-path: polygon(95% 17%, 69% 9%, 54% 30%, 36% 9%, 15% 20%, 8% 43%, 25% 81%, 5
 
 .episodios span{
    margin-left: 5px;
+}
+
+@media (500px< width <900px){
+   .card-container{
+      width: 25%;
+      height: 55%;
+   }
+}
+
+@media (width>900px){
+   .card-container{
+      width: 15%;
+      height: 55%;
+   }
 }
