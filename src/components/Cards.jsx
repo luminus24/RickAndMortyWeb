@@ -1,11 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import useGetCharacters from '../Hooks/useGetCharacters'
 import "../styles/cardStyles.css"
 
 const Cards = ({ characterName }) => {
+   const [count, setCount] = useState(1)
+   const {characters, nextCharacters, prevCharacters, setActualCharacters} = useGetCharacters(characterName)
+   const OnclickNext = () =>{
+      setCount(count + 1)
+      setActualCharacters(nextCharacters)
+   }
 
-   const characters = useGetCharacters(characterName)
-
+   const OnclickPrev = () =>{
+      if(count>0){
+         setCount(count - 1)
+      }
+      setActualCharacters(prevCharacters)
+   }
    return (
       <div className='card'>
          {
@@ -34,6 +44,11 @@ const Cards = ({ characterName }) => {
                </div>
             ))
          }
+         <div>
+            <button onClick={OnclickPrev}>Prev</button>
+            <div>{count}</div>
+            <button onClick={OnclickNext}>Next</button>
+         </div>
       </div>
    )
 }

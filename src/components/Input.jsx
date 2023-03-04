@@ -6,7 +6,7 @@ const Input = ({setCharacterName}) => {
    const handleSubmit = e =>{
       e.preventDefault()
       setCharacterName(e.target.searchCharacter.value.trim().toLowerCase())
-
+      e.target.searchCharacter.value = ""
    }
 
    return (
